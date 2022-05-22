@@ -2,14 +2,16 @@ var cards = document.getElementsByClassName("snack-card");
 
 [...cards].map((card) => {
   card.addEventListener("click", function () {
-    let curr = this;
-    curr.classList.toggle("hover");
+    this.classList.toggle("hover");
+    // let curr = this;
+    // curr.style.transform = "rotateY(180deg)";
 
-    let close = this.childNodes[3].childNodes[1];
+    // let close = curr.childNodes[3].childNodes[1];
 
-    close.addEventListener("click", function () {
-      curr.classList.remove("hover");
-      console.log(curr);
-    });
+    // close.addEventListener("click", function () {
+    //   let back = this.parentElement;
+    //   this.parentElement.style.transform = "rotateY(-180deg)";
+    //   console.log(curr);
+    // });
   });
 });
