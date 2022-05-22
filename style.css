@@ -218,3 +218,304 @@ main {
   align-items: center;
   justify-content: center;
 }
+
+section {
+  margin: 2rem;
+  text-align: center;
+  color: #352817;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.sec-intro {
+  font-size: 45px;
+  color: #352817;
+  opacity: 0.16;
+  margin-bottom: 2rem;
+}
+
+.item-names {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 75%;
+  line-height: 1.5;
+  margin: auto;
+}
+
+.item-name {
+  font-weight: bold;
+  font-size: 35px;
+  margin: 0 1rem;
+}
+
+.main-head {
+  color: #231b10;
+  opacity: 0.25;
+  font-size: 160px;
+  margin: 2rem 0;
+}
+
+.snacks {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+}
+
+.snack-card,
+.front,
+.back {
+  min-width: 400px;
+  margin: 0.2rem;
+  height: 600px;
+  border-radius: 200px 200px 60px 60px;
+}
+
+.snack-card {
+  position: relative;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+/* .snack-card.hover,
+.back {
+  transform: rotateY(180deg);
+} */
+
+.hover,
+.back {
+  transform: rotateY(180deg);
+}
+
+.front,
+.back {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 2rem;
+  padding-bottom: 0.5rem;
+  color: #352817;
+  transition: all 0.2s ease;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.front {
+  cursor: pointer;
+}
+
+.front:hover {
+  background-color: #f9f3df;
+}
+
+.snack-name {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+  width: 90%;
+  text-transform: capitalize;
+}
+
+.snack-cost {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.back {
+  background-color: #d1ebe8;
+  transform: rotateY(180deg);
+}
+
+.close-btn {
+  transform: rotate(45deg);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  cursor: pointer;
+  border: none;
+  color: #d1ebe8;
+  background: #352817;
+  opacity: 0.2;
+  font-weight: bold;
+  /* display: none; */
+}
+
+.detail-head {
+  opacity: 0.5;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.contents {
+  margin-top: 10px;
+}
+
+.contents .content-list {
+  list-style: none;
+  display: flex;
+  margin-top: 10px;
+}
+
+.content-list li {
+  margin: 10px 12px;
+}
+
+.content-list li img {
+  max-width: 60px;
+}
+
+.nutritions {
+  position: relative;
+  width: 100%;
+}
+
+.nutritions .stamp {
+  width: 62px;
+  height: 62px;
+  border-radius: 100px;
+  background-color: white;
+  border: 2px solid #362918;
+  /* transform:; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #362918;
+  position: absolute;
+  top: 50%;
+  left: -2%;
+  transform: translateY(-50%) rotate(-15deg);
+  font-family: "Roboto Mono";
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.stamp p {
+  font-size: 20px;
+}
+
+.stamp span {
+  font-size: 15px;
+}
+
+.nutritions dl {
+  display: flex;
+  margin: auto;
+  width: 50%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nutritions dl dt {
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  color: #362918d9;
+  line-height: 20px;
+}
+
+.nutritions dl dd {
+  font-family: "Roboto Mono", monospace;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.nutritions dl dd span {
+  font-size: 15px;
+}
+
+.nutritions dl .vr {
+  width: 2px;
+  background-color: #362918;
+  opacity: 0.2;
+  min-height: 50px;
+  border-radius: 10px;
+}
+
+.back .size-form {
+  width: 100%;
+}
+
+.size-form ul {
+  list-style: none;
+  width: 80%;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+.size-form input[type="radio"] {
+  display: none;
+}
+
+.size-form ul label {
+  border-radius: 42px;
+  border: 2px solid#352817;
+  background-color: transparent;
+  font-family: "Roboto Mono";
+  font-weight: 700;
+  color: #362918;
+  padding: 0.3rem 1rem;
+  /* margin-right: 10px; */
+  transition: all 0.1s ease;
+}
+
+.size-form ul label:hover {
+  background: #352817;
+  color: white;
+  cursor: pointer;
+}
+
+.size-form ul input[type="radio"]:focus + label {
+  background: #352817;
+  color: white;
+}
+
+.size-form ul input[type="radio"]:checked + label {
+  background: #352817;
+  color: white;
+}
+
+.back .btns {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.btns .card-btn {
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border: none;
+  color: white;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 500;
+  font-size: 15px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.btns #learn {
+  background-color: #d26938;
+}
+
+.btns #cart {
+  background-color: rgba(54, 41, 24, 0.85);
+}
